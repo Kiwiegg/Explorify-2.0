@@ -1,9 +1,14 @@
+import SideBar from "./components/SideBar.tsx"
+
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="flex">
+      <SideBar/>
+      <div className="flex-grow p-3 text-xl text-gray-900 font-semibold bg-teal-100">
+        REACT TAILWIND
+      </div>
+    </div>
   )
 }
 
