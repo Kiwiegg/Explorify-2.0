@@ -45,7 +45,7 @@ const SideBar = () => {
                             className={` ${
                                 !open && "peer-hover:opacity-100"
                             } absolute left-16 bg-white font-semibold text-gray-900 rounded-md drop-shadow-lg 
-                            px-2.5 py-0.5 opacity-0 duration-150`}
+                            px-2.5 py-0.5 opacity-0 duration-150 pointer-events-none`}
                         >
                             {menu?.name}
                         </h2>
