@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "../index.css";
 import SwipeContainer from "../components/SwipeContainer";
 import SelectedSongsContainer from "../components/SelectedSongsContainer";
-import { SongProp } from "../components/Card";
+import { SongProp } from "../controllers/getSongs";
 import { getCards } from "../controllers/getSongs";
 import { useLocalStorage } from "usehooks-ts";
 

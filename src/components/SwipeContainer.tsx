@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Deck, HoverState } from "./Deck";
-import { SongProp } from "./Card";
+import { SongProp } from "../controllers/getSongs";
 import { AiOutlineUndo, AiFillHeart } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import { useLocalStorage } from "usehooks-ts";

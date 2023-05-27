@@ -1,5 +1,5 @@
 import React from "react";
-import { SongProp } from "./Card";
+import { SongProp } from "../controllers/getSongs";
 import "../style/animation.css";
 
 interface Prop {
