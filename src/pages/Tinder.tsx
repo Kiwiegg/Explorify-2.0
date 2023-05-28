@@ -3,12 +3,12 @@ import "../index.css";
 import SwipeContainer from "../components/SwipeContainer";
 import SelectedSongsContainer from "../components/SelectedSongsContainer";
 import { SongProp } from "../controllers/getSongs";
-import { getCards } from "../controllers/getSongs";
+import { getSongsForTinder } from "../controllers/getSongs";
 import { useLocalStorage } from "usehooks-ts";
 
 function TinderPage() {
     const [size, setSize] = useLocalStorage("songs_list_size", 0);
-    const [cards, setCards] = useLocalStorage("songs", getCards());
+    const [cards, setCards] = useLocalStorage("songs", getSongsForTinder());
 
     let songsFromLocalStorage = localStorage.getItem("songs_list");
     let songsSaved = new Set<SongProp>(
@@ -34,7 +34,6 @@ function TinderPage() {
             "songs_list",
             JSON.stringify(Array.from(songsSaved))
         );
-        console.log(songsSaved.size);
         setSize(songsSaved.size);
     };
 

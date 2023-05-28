@@ -10,7 +10,7 @@ interface Prop {
 
 const SelectedSongsContainer = ({songs, deleteCard}: Prop) => {
     return (
-        <div className="flex flex-col w-[24rem] h-[36rem] bg-gray-100 rounded-2xl shadow-lg">
+        <div className="flex flex-col w-[24rem] h-[36rem] bg-gray-100 rounded-md shadow-lg">
             <h1 className="border-l-black border-b-2 text-center m-4 py-2 text-lg font-serif font-medium select-none">
                 Selected Songs
             </h1>

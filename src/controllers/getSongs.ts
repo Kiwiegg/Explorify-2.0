@@ -5,11 +5,11 @@ export interface SongProp {
     audioSrc: string;
 }
 
-export const getCards = () => { 
-    return cards
+export const getSongsForTinder = () => { 
+    return songs
 };
 
-const cards: SongProp[] = [
+const songs: SongProp[] = [
     {
         imageSrc:
             "https://i.scdn.co/image/ab67616d0000b2730d39c7f4416b6655c664bad3",
